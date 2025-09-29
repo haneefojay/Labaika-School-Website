@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Labaika Group of Schools - Faith, Learning and Humanity</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="/css/style.css", rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Happy+Monkey&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Orbitron:wght@400..900&family=Parkinsans:wght@300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'dm-sans': ['DM Sans'],
+                    },
+                    colors: {
+                        'primary-blue': '#3B82F6',
+                        'primary-pink': '#EC4899',
+                        'light-pink': '#FCE7F3',
+                        'dark-blue': '#1E3A8A',
+                        'light-blue': '#DBEAFE',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="flex flex-col bg-[#FCFCFC] items-start w-full md:max-w-[1440px] mx-auto sm:items-center sm:bg-[#FFF] [font-family:'Bricolage_Grotesque']">
+    <header class="w-full flex justify-center md:justify-start">
+        <nav class="flex justify-between items-center font-bold border border-[#E3E3E3] rounded-[1000px]  mx-2 border-solid w-full max-w-[1440px] bg-white px-4 py-3 sm:px-[50px] sm:py-3">
+            <!-- Logo -->
+            <div class="flex items-center">
+                <img src="assets/Labaika Logo 1.png" alt="Labaika Group of Schools" class="w-[77px] h-[88px] shrink-0 aspect-[7/8]">
+            </div>
+            
+            <!-- Desktop Navigation -->
+            <div class="hidden lg:block">
+                <div class="hidden sm:flex items-center gap-6 lg:gap-[2.15vw]">
+                    <a href="index.html" class="flex justify-center items-center gap-2.5 px-2.5 py-[15px]">Home</a>
+                    <a href="about.html" class="flex justify-center items-center gap-2.5 px-0 py-[15px] border-b-[5px] border-solid border-[#A0139E]">About Us</a>
+                    <a href="achievements.html" class="flex justify-center items-center gap-2.5 px-2.5 py-[15px]">Achievements</a>
+                    <a href="academics.html" class="flex justify-center items-center gap-2.5 px-2.5 py-[15px]">Academics</a>
+                    <a href="gallery.html" class="flex justify-center items-center gap-2.5 px-2.5 py-[15px]">Gallery</a>
+                    <a href="admission.html" class="flex justify-center items-center gap-2.5 px-2.5 py-[15px]">Admission</a>
+                    <a href="events.html" class="flex justify-center items-center gap-2.5 px-2.5 py-[15px]">Events and Activities</a>
+                    <a href="contact.html" class="flex justify-center items-center gap-2.5 px-2.5 py-[15px]">Contact Us</a>
+                </div>
+            </div>
+            
+            <!-- Mobile menu button -->
+            <div class="lg:hidden">
+                <button type="button" class="w-6 h-6 shrink-0 aspect-[1/1]" id="mobile-menu-button">
+                    <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+            </div>
+        </nav>
+        
+        <!-- Mobile Navigation -->
+        <div class="lg:hidden hidden absolute top-20 left-4 right-4 z-50" id="mobile-menu">
+            <div class="bg-white border border-gray-200 rounded-2xl shadow-lg p-4 space-y-2">
+                <a href="index.html" class="text-gray-700 hover:text-primary-pink block px-3 py-2">Home</a>
+                <a href="about.html" class="text-primary-pink block px-3 py-2 font-medium">About Us</a>
+                <a href="achievements.html" class="text-gray-700 hover:text-primary-pink block px-3 py-2">Achievements</a>
+                <a href="academics.html" class="text-gray-700 hover:text-primary-pink block px-3 py-2">Academics</a>
+                <a href="gallery.html" class="text-gray-700 hover:text-primary-pink block px-3 py-2">Gallery</a>
+                <a href="admission.html" class="text-gray-700 hover:text-primary-pink block px-3 py-2">Admission</a>
+                <a href="events.html" class="text-gray-700 hover:text-primary-pink block px-3 py-2">Events and Activities</a>
+                <a href="contact.html" class="text-gray-700 hover:text-primary-pink block px-3 py-2">Contact Us</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="flex flex-col justify-center items-center self-stretch gap-[5.9vw] pb-[2vh] md:gap-0 md:pt-2 md:px-0 ">
+        <div class="md:max-w-[1420px] md:px-[1vw] md:h-[44.11vh] md:mb-[6vh]">
+            <img src="/assets/Frame 94.png">
+        </div>
+        <div class="flex justify-between items-start self-stretch px-4 py-[3.91vw] md:w-full md:px-[3.91vw] md:py-[5vw]">
+            <p class="self-stretch text-[color:var(--Black-500,#717171)]  not-italic font-normal leading-normal text-[4.1vw] md:text-[1.6vw]">
+                <span class="font-bold text-black">At Labaika Schools, education is more than academics — it is the nurturing of character, culture, and faith.
+                    Founded with a vision to raise well-rounded individuals,
+                </span> 
+                we combine the excellence of globally recognized education with a strong grounding in African cultural pride and the guiding principles of Islamic values.<br><br>
+                <span class="font-bold text-black">We believe every child is unique, with talents and potential waiting to be discovered. 
+                </span> 
+                Our role as educators is not only to teach but also to inspire, guide, and equip our students to thrive in today’s world while staying connected to their roots and faith.
+            </p>
+        </div>
+    </section>
+
+    <section class=" flex items-start px-4 py-[50px] gap-6 self-stretch flex-col md:flex-row md:w-full md:gap-[50px] md:p-[50px]">
+        <div class="flex flex-col justify-center items-start gap-6 self-stretch md:flex-[1_0_0] md:self-auto">
+            <h1 class="self-stretch text-[color:var(--Black-900,#000)] font-['Bricolage_Grotesque'] not-italic font-extrabold leading-[normal] text-[8vw] md:text-[4vw]">
+                Our Mission
+            </h1>
+            <p class=" self-stretch text-[color:var(--Black-500,#717171)] font-['Bricolage_Grotesque'] not-italic font-normal leading-[normal] text-[4vw] md:text-[1.6vw]">
+                To provide quality education that balances intellectual growth, moral development, and cultural identity, preparing students to become responsible global citizens with strong Islamic values.
+            </p>
+        </div>
+        <div class="self-stretch h-[60vw] max-h-[28.4vh] rounded-[2.4vw] bg-[url('/assets/mission.jpg')] bg-cover bg-center bg-no-repeat md:w-[46.7vw] md:h-[23.7vw] md:max-h-[47vh] md:shrink-0">
+        </div>
+    </section>
+
+    <section class=" flex items-start px-4 py-[50px] gap-6 self-stretch flex-col md:flex-row md:w-full md:gap-[50px] md:p-[50px]">
+        <div class="hidden md:flex self-stretch h-[60vw] max-h-[28.4vh] rounded-[2.4vw] bg-[url('/assets/vision.jpg')] bg-cover bg-center bg-no-repeat md:w-[46.7vw] md:h-[23.7vw] md:max-h-[47vh] md:shrink-0">
+        </div>
+        <div class="flex flex-col justify-center items-start gap-6 self-stretch md:flex-[1_0_0] md:self-auto">
+            <h1 class="self-stretch text-[color:var(--Black-900,#000)] font-['Bricolage_Grotesque'] not-italic font-extrabold leading-[normal] text-[8vw] md:text-[4vw]">
+                Our Vission
+            </h1>
+            <p class=" self-stretch text-[color:var(--Black-500,#717171)] font-['Bricolage_Grotesque'] not-italic font-normal leading-[normal] text-[4vw] md:text-[1.6vw]">
+                To be a leading educational institution in Africa, known for academic excellence, cultural richness, and the nurturing of students who embody discipline, creativity, leadership, and compassion.
+            </p>
+        </div>
+        <div class="md:hidden flex self-stretch h-[60vw] max-h-[28.4vh] rounded-[2.4vw] bg-[url('/assets/vision.jpg')] bg-cover bg-center bg-no-repeat md:w-[46.7vw] md:h-[23.7vw] md:max-h-[47vh] md:shrink-0">
+        </div>
+    </section>
+
+    <section class="flex items-start gap-[6.7vw] self-stretch px-[4vw] py-[12vh] md:w-full md:gap-[3.5vw] md:px-[3.5vw] md:py-[6.9vh]">
+        <div class="flex flex-col gap-[24px] md:gap-[50px]">
+            <h1 class="self-stretch text-[color:var(--Black-900,#000)] font-['Bricolage_Grotesque'] not-italic font-extrabold leading-[normal] text-[8vw] md:text-[4vw]">
+                Our Values
+            </h1>
+            <div class="flex flex-col gap-[24px]">
+                <p class="self-stretch text-[color:var(--Black-500,#717171)]  not-italic font-normal leading-normal text-[4.1vw] md:text-[1.6vw]">
+                <span class="font-bold text-black">Excellence:</span> We hold ourselves to the highest standards in teaching and learning.
+                </p>
+                <p class="self-stretch text-[color:var(--Black-500,#717171)] font-['Bricolage_Grotesque'] not-italic font-normal leading-normal text-[4.1vw] md:text-[1.6vw]">
+                    <span class="font-bold text-black">Faith:</span> Islamic principles guide our environment, shaping character and conduct.
+                </p>
+                <p class="self-stretch text-[color:var(--Black-500,#717171)] font-['Bricolage_Grotesque'] not-italic font-normal leading-normal text-[4.1vw] md:text-[1.6vw]">
+                    <span class="font-bold text-black">Culture:</span> We embrace and celebrate African heritage as part of our identity.
+                </p>
+                <p class="self-stretch text-[color:var(--Black-500,#717171)] font-['Bricolage_Grotesque'] not-italic font-normal leading-normal text-[4.1vw] md:text-[1.6vw]">
+                    <span class="font-bold text-black">Integrity:</span> Honesty, respect, and responsibility are at the core of everything we do.
+                </p>
+                <p class="self-stretch text-[color:var(--Black-500,#717171)] font-['Bricolage_Grotesque'] not-italic font-normal leading-normal text-[4.1vw] md:text-[1.6vw]">
+                    <span class="font-bold text-black">Community:</span> We foster a supportive environment where students, parents, and staff grow together.
+                </p>
+            </div>            
+        </div>
+    </section>
+
+    <section class="flex flex-col justify-center items-center gap-[4vw] px-4 py-[25.6vw] md:w-full md:gap-3 md:px-[3.5vw] md:py-[6.9vw]">
+        <div class="flex flex-col justify-center items-center gap-[0.8vw] md:gap-[0.6vw] md:max-w-[1002px]">
+            <h1 class="flex text-center not-italic font-extrabold leading-[normal] text-[8.2vw] text-[color:var(--Black-900,#000)] md:text-[3.3vw]">
+                Why choose Labiaka
+            </h1>
+            <p class="flex text-center text-[color:var(--Black-500,#717171)]  not-italic font-normal leading-normal text-[4.1vw] md:text-[1.6vw] md:w-full">
+                At Labaika Schools, we provide a complete educational experience that nurtures the mind, heart, and identity of every child.
+            </p>
+        </div>
+
+        <div class="flex flex-col justify-center items-center gap-2.5 md:px-4 md:gap-8 md:pt-[20px]">
+            <div class="flex flex-col md:flex-row justify-center items-center gap-2.5">
+                <div class="flex flex-col items-start self-stretch border border-[color:var(--Black-100,#E3E3E3)] rounded-[40px] border-solid gap-6 p-5 md:w-[30vw] md:justify-between md:p-[30px]">
+                    <div class="flex items-center gap-2.5 ">
+                        <img src="/assets/academic.png">
+                    </div>
+                    <div class="flex flex-col items-start gap-[5px] self-stretch">
+                        <h2 class="self-stretch text-[color:var(--Black-800,#1C1C1C)] font-['Bricolage_Grotesque'] not-italic font-medium leading-normal text-xl md:text-[28px]">
+                            Academic Excellence
+                        </h2>
+                        <p class="flex text-start text-[color:var(--Black-500,#717171)]  not-italic font-normal leading-normal text-[4.1vw] md:text-[1.25vw] md:w-full">
+                            A curriculum that blends global best practices with local relevance, preparing students to excel in higher education and beyond.
+                        </p>
+
+                    </div>
+                </div>
+
+                <div class="flex flex-col items-start self-stretch border border-[color:var(--Black-100,#E3E3E3)] rounded-[40px] border-solid gap-6 p-5 md:w-[30vw] md:justify-between md:p-[30px]">
+                    <div class="flex items-center gap-2.5 ">
+                        <img src="/assets/cultural.png">
+                    </div>
+                    <div class="flex flex-col items-start gap-[5px] self-stretch">
+                        <h2 class="self-stretch text-[color:var(--Black-800,#1C1C1C)] font-['Bricolage_Grotesque'] not-italic font-medium leading-normal text-xl md:text-[28px]">
+                            Academic Excellence
+                        </h2>
+                        <p class="flex text-start text-[color:var(--Black-500,#717171)]  not-italic font-normal leading-normal text-[4.1vw] md:text-[1.25vw] md:w-full">
+                            Rooted in African heritage, we teach children to embrace who they are, building pride and confidence in their cultural background.
+                        </p>
+
+                    </div>
+                </div>
+
+                <div class="flex flex-col items-start self-stretch border border-[color:var(--Black-100,#E3E3E3)] rounded-[40px] border-solid gap-6 p-5 md:w-[30vw] md:justify-between md:p-[30px]">
+                    <div class="flex items-center gap-2.5 ">
+                        <img src="/assets/islamic.png">
+                    </div>
+                    <div class="flex flex-col items-start gap-[5px] self-stretch">
+                        <h2 class="self-stretch text-[color:var(--Black-800,#1C1C1C)] font-['Bricolage_Grotesque'] not-italic font-medium leading-normal text-xl md:text-[28px]">
+                            Academic Excellence
+                        </h2>
+                        <p class="flex text-start text-[color:var(--Black-500,#717171)]  not-italic font-normal leading-normal text-[4.1vw] md:text-[1.25vw] md:w-full">
+                            We nurture spiritual growth and discipline, ensuring students grow into morally upright, faith-driven individuals.
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex flex-col justify-center items-center gap-2.5 md:px-4 md:gap-8">
+            <div class="flex flex-col md:flex-row justify-center items-center gap-2.5">
+                <div class="flex flex-col items-start self-stretch border border-[color:var(--Black-100,#E3E3E3)] rounded-[40px] border-solid gap-6 p-5 md:w-[30vw] md:justify-between md:p-[30px]">
+                    <div class="flex items-center gap-2.5 ">
+                        <img src="/assets/community.png">
+                    </div>
+                    <div class="flex flex-col items-start gap-[5px] self-stretch">
+                        <h2 class="self-stretch text-[color:var(--Black-800,#1C1C1C)] font-['Bricolage_Grotesque'] not-italic font-medium leading-normal text-xl md:text-[28px]">
+                            Academic Excellence
+                        </h2>
+                        <p class="flex text-start text-[color:var(--Black-500,#717171)]  not-italic font-normal leading-normal text-[4.1vw] md:text-[1.25vw] md:w-full">
+                            Parents, teachers, and students work together in a safe, inclusive, and supportive environment where every child belongs.
+                        </p>
+
+                    </div>
+                </div>
+
+                <div class="flex flex-col items-start self-stretch border border-[color:var(--Black-100,#E3E3E3)] rounded-[40px] border-solid gap-6 p-5 md:w-[30vw] md:justify-between md:p-[30px]">
+                    <div class="flex items-center gap-2.5 ">
+                        <img src="/assets/development.png">
+                    </div>
+                    <div class="flex flex-col items-start gap-[5px] self-stretch">
+                        <h2 class="self-stretch text-[color:var(--Black-800,#1C1C1C)] font-['Bricolage_Grotesque'] not-italic font-medium leading-normal text-xl md:text-[28px]">
+                            Academic Excellence
+                        </h2>
+                        <p class="flex text-start text-[color:var(--Black-500,#717171)]  not-italic font-normal leading-normal text-[4.1vw] md:text-[1.25vw] md:w-full">
+                            From academics to arts, sports, and leadership, we shape students into confident, well-rounded individuals.
+                        </p>
+
+                    </div>
+                </div>
+
+                <div class="flex flex-col items-start self-stretch border border-[color:var(--Black-100,#E3E3E3)] rounded-[40px] border-solid gap-6 p-5 md:w-[30vw] md:justify-between md:p-[30px]">
+                    <div class="flex items-center gap-2.5 ">
+                        <img src="/assets/future.png">
+                    </div>
+                    <div class="flex flex-col items-start gap-[5px] self-stretch">
+                        <h2 class="self-stretch text-[color:var(--Black-800,#1C1C1C)] font-['Bricolage_Grotesque'] not-italic font-medium leading-normal text-xl md:text-[28px]">
+                            Academic Excellence
+                        </h2>
+                        <p class="flex text-start text-[color:var(--Black-500,#717171)]  not-italic font-normal leading-normal text-[4.1vw] md:text-[1.25vw] md:w-full">
+                            We equip students with critical thinking, creativity, and digital skills to thrive in an ever-changing world.
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="flex flex-col items-center border-y-4 border-solid border-t-[color:var(--Gradient-fill,#A0139E)] border-b-[color:var(--Gradient-fill,#A0139E)] bg-[#FFE5F6] w-full gap-[8.53vw] px-[4.27vw] pt-[8vw] pb-[26.67vw] h-[109.33vw] md:gap-[2.22vw] md:px-[3.47vw] md:py-[6.94vw] md:h-auto">
+        <div class="flex flex-col justify-center items-center gap-0.5 self-stretch">
+            <h1 class="self-stretch text-[color:var(--Black-900,#000)] text-center not-italic font-extrabold leading-normal text-[32px] md:text-[64px]">Enroll your child Today!</h1>
+            <p class="text-[color:var(--Black-900,#000)] text-center not-italic font-normal leading-normalself-stretch md:w-[774px]text-base md:text-2xl">Give your child the best start in life—enroll your child today in a school where excellence, care, and future success begin!</p>
+        </div>
+        <button onclick="window.location.href='admission.html'" class="flex justify-center items-center gap-2.5 text-white not-italic font-extrabold leading-[normal] w-[235px] h-16  border border-solid border-white px-6 py-5 rounded-[100px]  [background:var(--Gradient-fill,linear-gradient(90deg,#A0139E_0%,#C41943_100%))]  shadow-[0_4px_20px_0_rgba(207,39,152,0.43),2px_-4px_4px_0_rgba(0,0,0,0.25)_inset,-2px_4px_4px_0_rgba(255,255,255,0.47)_inset] shrink-0 md:shrink">
+            Start your admission
+        </button>
+    </section>
+
+    <footer class="w-full bg-[#FEF5EA] px-[3.9vw] pt-[6vh] pb-[6vh] md:pt-[12vh] flex flex-col items-start gap-[3.5vw]">
+        <div>
+            <!-- Logo + Tagline -->
+            <div class="flex items-start self-stretch gap-[28.26vw] sm:w-[91.79vw] sm:h-[11.03vw] sm:shrink-0">
+                <div class="flex items-start gap-[0.75rem] pb-[4vh]">
+                    <img src="/assets/Labaika Logo 1.png" alt="Logo" class="w-[8vw] max-w-[62px] h-auto" />
+                    <div class="flex flex-col items-start">
+                        <h2 class="not-italic font-extrabold leading-normal bg-gradient-to-r from-[#A0139E] to-[#C41943] bg-clip-text text-transparent text-[5vw] sm:text-[32px]">
+                            Labaika Group of Schools
+                        </h2>
+                        <p class="text-[3.5vw] lg:text-[1.25vw] font-medium text-[#393939]">
+                        Faith, Learning and Humanity
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="grid grid-cols-2 lg:grid-cols-4 gap-[5vh] lg:gap-[3vw] w-full lg:w-[100%]">
+                <!-- Quick Links -->
+                <div class="flex flex-col gap-[1.5vh]">
+                    <h3 class="font-bold text-[3.8vw] lg:text-[1.25vw] text-[#A0139E] flex items-center gap-1">
+                        Quick links <span>🔗</span>
+                    </h3>
+                    <ul class="flex flex-col gap-[1vh] text-[3.3vw] lg:text-[1vw]">
+                        <li>Home</li>
+                        <li>About us</li>
+                        <li>Achievements</li>
+                        <li>Admission</li>
+                        <li>Academics</li>
+                        <li>Gallery</li>
+                        <li>Events and Activities</li>
+                    </ul>
+                </div>          
+                <!-- Contact Us -->
+                <div class="flex flex-col gap-[1.5vh]">
+                    <h3 class="font-bold text-[3.8vw] lg:text-[1.25vw] text-[#A0139E] flex items-center gap-1">
+                        Contact us <span>☎️</span>
+                    </h3>
+                    <ul class="flex flex-col gap-[1vh] text-[3.3vw] lg:text-[1vw]">
+                        <li>08166626317</li>
+                        <li>08055609712</li>
+                        <li>08035266801</li>
+                        <li>labaikaschools@gmail.com</li>
+                    </ul>
+                </div>          
+                <!-- Socials -->
+                <div class="flex flex-col gap-[1.5vh]">
+                    <h3 class="font-bold text-[3.8vw] lg:text-[1.25vw] text-[#A0139E] flex items-center gap-1">
+                        Socials <span>🔗</span>
+                    </h3>
+                    <ul class="flex flex-col gap-[1vh] text-[3.3vw] lg:text-[1vw]">
+                        <li>Facebook</li>
+                        <li>Instagram</li>
+                        <li>X (Twitter)</li>
+                    </ul>
+                </div>          
+                <!-- Address + Opening Hours -->
+                <div class="flex flex-col gap-[4vh]">
+                    <div class="flex flex-col gap-[1.5vh]">
+                        <h3 class="font-bold text-[3.8vw] lg:text-[1.25vw] text-[#A0139E] flex items-center gap-1">
+                            Address <span>📍</span>
+                        </h3>
+                        <p class="text-[3.3vw] lg:text-[1vw] leading-snug">
+                            Ayedaade Area, Off Alafara,<br />
+                            Elenusonso Road, Ibadan.
+                        </p>
+                    </div>
+                    <div class="hidden md:flex flex-col gap-[1.5vh]">
+                        <h3 class="font-bold text-[3.8vw] lg:text-[1.25vw] text-[#A0139E] flex items-center gap-1">
+                            Opening Hours <span>⏰</span>
+                        </h3>
+                        <p class="text-[3.3vw] lg:text-[1vw] leading-snug">
+                            (Monday to Friday) - 7:00am to 4:00pm
+                        </p>
+                    </div>
+                </div>          
+                <div class="flex md:hidden flex-col gap-[1.5vh]">
+                    <h3 class="font-bold text-[3.8vw] lg:text-[1.25vw] text-[#A0139E] flex items-center gap-1">
+                        Opening Hours <span>⏰</span>
+                    </h3>
+                    <p class="text-[3.3vw] lg:text-[1vw] leading-snug">
+                        (Monday to Friday) - 7:00am to 4:00pm
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom Copyright -->
+        <div class="mt-[5vh] w-full text-center text-[3vw] lg:text-[1vw] text-[#5C5C5C]">
+            Copyright © 2025 Labaika Group of Schools. All Rights Reserved
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>

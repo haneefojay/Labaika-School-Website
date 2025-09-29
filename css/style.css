@@ -1,0 +1,14 @@
+@import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+
+body {
+  font-family: "DM Sans";
+}
+
+.stats{
+  width: 286px;
+flex-shrink: 0;
+align-self: stretch;
+border-radius: 20px;
+background: url(<path-to-image>) lightgray 50% / cover no-repeat, #DDD;
+}

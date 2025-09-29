@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Labaika Group of Schools - Faith, Learning and Humanity</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="/css/style.css", rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Happy+Monkey&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Orbitron:wght@400..900&family=Parkinsans:wght@300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'dm-sans': ['DM Sans'],
+                    },
+                    colors: {
+                        'primary-blue': '#3B82F6',
+                        'primary-pink': '#EC4899',
+                        'light-pink': '#FCE7F3',
+                        'dark-blue': '#1E3A8A',
+                        'light-blue': '#DBEAFE',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="flex flex-col bg-[#FCFCFC] items-start w-full max-w-[1440px] mx-auto sm:items-center sm:bg-[#FFF] [font-family:'Bricolage_Grotesque']">
+    <header class="w-full flex justify-center md:justify-start">
+        <nav class="flex justify-between items-center border border-[#E3E3E3] font-bold rounded-[1000px] border-solid w-full max-w-[1440px] bg-white px-4 py-3 sm:px-[50px] sm:py-3">
+            <!-- Logo -->
+            <div class="flex items-center">
+                <img src="assets/Labaika Logo 1.png" alt="Labaika Group of Schools" class="w-[77px] h-[88px] shrink-0 aspect-[7/8]">
+            </div>
+            
+            <!-- Desktop Navigation -->
+            <div class="hidden lg:block">
+                <div class="hidden sm:flex items-center gap-6 lg:gap-[2.15vw]">
+                    <a href="index.html" class="flex justify-center items-center gap-2.5 px-0 py-[15px] border-b-[5px] border-solid border-[#A0139E]">Home</a>
+                    <a href="about.html" class="flex justify-center items-center gap-2.5 px-2.5 py-[15px]">About Us</a>
+                    <a href="achievements.html" class="flex justify-center items-center gap-2.5 px-2.5 py-[15px]">Achievements</a>
+                    <a href="academics.html" class="flex justify-center items-center gap-2.5 px-2.5 py-[15px]">Academics</a>
+                    <a href="gallery.html" class="flex justify-center items-center gap-2.5 px-2.5 py-[15px]">Gallery</a>
+                    <a href="admission.html" class="flex justify-center items-center gap-2.5 px-2.5 py-[15px]">Admission</a>
+                    <a href="events.html" class="flex justify-center items-center gap-2.5 px-2.5 py-[15px]">Events and Activities</a>
+                    <a href="contact.html" class="flex justify-center items-center gap-2.5 px-2.5 py-[15px]">Contact Us</a>
+                </div>
+            </div>
+            
+            <!-- Mobile menu button -->
+            <div class="lg:hidden">
+                <button type="button" class="w-6 h-6 shrink-0 aspect-[1/1]" id="mobile-menu-button">
+                    <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+            </div>
+        </nav>
+        
+        <!-- Mobile Navigation -->
+        <div class="lg:hidden hidden absolute top-20 left-4 right-4 z-50" id="mobile-menu">
+            <div class="bg-white border border-gray-200 rounded-2xl shadow-lg p-4 space-y-2">
+                <a href="index.html" class="text-primary-pink block px-3 py-2 font-medium">Home</a>
+                <a href="about.html" class="text-gray-700 hover:text-primary-pink block px-3 py-2">About Us</a>
+                <a href="achievements.html" class="text-gray-700 hover:text-primary-pink block px-3 py-2">Achievements</a>
+                <a href="academics.html" class="text-gray-700 hover:text-primary-pink block px-3 py-2">Academics</a>
+                <a href="gallery.html" class="text-gray-700 hover:text-primary-pink block px-3 py-2">Gallery</a>
+                <a href="admission.html" class="text-gray-700 hover:text-primary-pink block px-3 py-2">Admission</a>
+                <a href="events.html" class="text-gray-700 hover:text-primary-pink block px-3 py-2">Events and Activities</a>
+                <a href="contact.html" class="text-gray-700 hover:text-primary-pink block px-3 py-2">Contact Us</a>
+            </div>
+        </div>
+    </header>
+    
+    <section class="flex flex-col justify-center items-center self-stretch gap-[5.9vw] px-[4.1vw] py-[6vh] md:gap-0 md:px-0 md:pb-[34vh]">
+        <div class="flex flex-col items-center justify-center gap-[0.13rem] md:gap-0">
+            <h1 class="text-center not-italic font-extrabold leading-[normal] text-[5.9vw] md:text-[3.33vw] text-[#1C1C1C]">
+                Labaika Groups of Schools
+            </h1>
+            <p class="self-stretch text-center not-italic font-normal leading-[normal] text-[#717171] text-[4.1vw] md:text-[1.32vw] pb-10">
+                Faith, Learning and Humanity
+            </p>
+            <button onclick="window.location.href='admission.html'" class="flex justify-center items-center gap-2.5 border border-solid border-white [background:linear-gradient(90deg,#A0139E_0%,#C41943_100%)] shadow-[0_4px_20px_0_rgba(207,39,152,0.43),2px_-4px_4px_0_rgba(0,0,0,0.25)_inset,-2px_4px_4px_0_rgba(255,255,255,0.47)_inset] px-3 py-5 rounded-[100px] w-[200px] h-[49px] md:w-[250px] md:h-auto md:py-5">
+                <span class="text-white text-[15px] md:text-xl not-italic leading-[normal]">Start your Admission<span class="md:hidden w-[15px] h-[15px] shrink-0 aspect-[1/1]"> →</span></span>
+            </button>
+        </div>
+        <div class="md:max-w-[1420px] md:px-[1vw] md:h-[70vh] md:pt-[9vh]">
+            <img src="/assets/Frame 43.png" >
+        </div>        
+    </section>
+
+    <!-- About Us Section -->
+    <section class="flex flex-col justify-center items-center self-stretch gap-4 px-[4vw] py-[12vh] md:flex-row md:justify-between md:items-center md:w-[90vw] md:px-[3.5vw] md:py-[14vh] lg:w-[90vw] lg:px-[3.5vw] lg:py-[14vh] xl:w-[75vw]">
+        <div class="flex flex-col justify-center items-start gap-6 self-stretch md:flex-[1_0_0]">
+            <h1 class="self-stretch text-[color:var(--Black-900,#000)] not-italic font-extrabold leading-[normal] text-[8.2vw]  md:text-[4.44vw] ">
+                About Us
+            </h1>
+            <p class="self-stretch text-[color:var(--Black-500,#717171)] not-italic font-normal leading-[normal] text-[4.1vw] md:text-[1.39vw] md:w-[46.7vw]">
+                Our great love for children and development of their inherent God given potentials brought about the establishment of Labaika Group of Schools in August during summer coaching.
+            </p>
+            <button onclick="window.location.href='about.html'" class=" hidden md:flex  w-[235px] h-16 justify-center items-center gap-2.5 border [background:var(--Gradient-fill,linear-gradient(90deg,#A0139E_0%,#C41943_100%))] shadow-[0_4px_20px_0_rgba(207,39,152,0.43),2px_-4px_4px_0_rgba(0,0,0,0.25)_inset,-2px_4px_4px_0_rgba(255,255,255,0.47)_inset] px-6 py-5 rounded-[100px] border-solid border-white text-white text-xl not-italic font-extrabold leading-[normal]">
+                Learn About us
+            </button>            
+        </div>
+        <img src="/assets/about.jpg" class=" h-[26.5vh] self-stretch aspect-[343/220.68] rounded-[5.13vw]  md:h-[400px] md:rounded-[1.39vw]">
+
+        <div class="md:hidden flex w-[235px] h-16 justify-center items-center gap-2.5 border [background:var(--Gradient-fill,linear-gradient(90deg,#A0139E_0%,#C41943_100%))] shadow-[0_4px_20px_0_rgba(207,39,152,0.43),2px_-4px_4px_0_rgba(0,0,0,0.25)_inset,-2px_4px_4px_0_rgba(255,255,255,0.47)_inset] px-6 py-5 rounded-[100px] border-solid border-white">
+            <button onclick="window.location.href='about.html'" class="text-white text-xl not-italic font-extrabold leading-[normal]">Learn About us</button>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="flex flex-col justify-center items-center gap-8 w-full self-stretch px-4 py-[50px] sm:max-w-[1440px] sm:px-[50px] sm:py-[100px]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="self-stretch text-[#000] text-center not-italic font-extrabold leading-normal text-[32px] md:text-[64px]">Education for a changing world</h2>
+                <p class="self-stretch text-[#717171]  text-center  font-normal  not-italic  leading-normal text-base md:text-2xl">
+                    We’re more than a school, we are a learning community that embraces high academic standards, Islamic teachings, and strong moral grounding.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+                <!-- Standard Western Education -->
+                <div>
+                    <img src="/assets/standard.png" alt="Standard Western Education" class="w-full h-48 object-cover rounded-[20px]">
+                    <div class="p-6">
+                        <h3 class="text-xl text-gray-900 mb-2 text-center">Standard Western Education</h3>
+                    </div>
+                </div>
+                
+                <!-- Islamic based Values and Morals -->
+                <div>
+                    <img src="/assets/islamic-learning.jpg" alt="Islamic based Values and Morals" class="w-full h-48 object-cover rounded-[20px]">
+                    <div class="p-6">
+                        <h3 class="text-xl  text-gray-900 mb-2 text-center">Islamic based Values and Morals</h3>
+                    </div>
+                </div>
+                
+                <!-- Cultural and Extracurricular Activities -->
+                <div>
+                    <img src="/assets/activities.jpg" alt="Cultural and Extracurricular Activities" class="w-full h-48 object-cover rounded-[20px]">
+                    <div class="p-6">
+                        <h3 class="text-xl text-gray-900 mb-2 text-center">Cultural and Extracurricular Activities</h3>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="flex items-center justify-center">
+                <button onclick="window.location.href='academics.html'" class=" flex justify-center items-center gap-2.5 border
+    [background:var(--Gradient-fill,linear-gradient(90deg,#A0139E_0%,#C41943_100%))]
+    shadow-[0_4px_20px_0_rgba(207,39,152,0.43),2px_-4px_4px_0_rgba(0,0,0,0.25)_inset,-2px_4px_4px_0_rgba(255,255,255,0.47)_inset]
+    rounded-[100px] border-solid border-white
+    w-[180px] h-12 px-4 py-3 text-sm 
+    md:w-[235px] md:h-16 md:px-6 md:py-5 md:text-base">
+                    <span class="text-white">See our Curriculum</span>
+                </button>
+            </div>
+        </div>
+
+    </section>
+    <!-- Memories Section -->
+    <section >
+        <div class="flex flex-col justify-center items-center gap-8 w-full self-stretch px-4 py-[50px] sm:max-w-[1440px] sm:px-[50px] sm:py-[100px]">
+            <div class="text-center mb-12">
+                <h2 class="self-stretch text-[#000] text-center not-italic font-extrabold leading-normal text-[32px] md:text-[64px]">Memories at Labaika</h2>
+                <p class="text-gray-600 max-w-3xl mx-auto text-lg">
+                    Be it academic success, cultural celebrations, or sports achievements, our students explore, express and evolve in a vibrant environment.
+                </p>
+            </div>
+            
+            <div class="flex flex-col items-end gap-3 self-stretch md:gap-8">
+                
+                <div class="flex items-center gap-3 md:gap-[22px]">
+                    <button>
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                        </svg>
+                    </button>
+                    <button>
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="flex items-center gap-5 self-stretch">
+                    <div class="flex flex-col items-start gap-6 bg-white w-full md:w-auto flex-[unset] md:flex-[1_0_0] self-auto md:self-stretch">                        
+                        <div class="h-[351px] self-stretch rounded-[20px] bg-[url('/assets/competition.jpg')] bg-cover bg-no-repeat bg-center bg-[#DDD]">
+                        </div>
+                        <h3 class="text-lg font-semibold text-gray-900 mb-2">Abdulsalam Yahaya winning the 2nd Runner up for the 2023 Cowbellpedia Competition</h3>
+                    </div>
+
+                    <div class="hidden md:flex flex-col items-start gap-6 bg-whitew-[343px] md:w-auto flex-[unset] md:flex-[1_0_0] self-auto md:self-stretch">
+                        <div class="h-[351px] self-stretch rounded-[20px] bg-[url('/assets/recitation.jpg')] bg-cover bg-no-repeat bg-center bg-[#DDD]">
+                        </div>                        
+                        <h3 class="text-lg font-semibold text-gray-900 mb-2">Muhammad Yahya winning the Labaika yearly quranic competition</h3>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="flex items-center gap-3 flex-col md:flex-row md:self-auto self-stretch">
+                <button onclick="window.location.href='gallery.html'" class="flex h-16 justify-center items-center gap-2.5 border border-white border-solid bg-gradient-to-r from-[#A0139E] to-[#C41943] shadow-[0_4px_20px_0_rgba(207,39,152,0.43),2px_-4px_4px_0_rgba(0,0,0,0.25)_inset,-2px_4px_4px_0_rgba(255,255,255,0.47)_inset] px-6 py-5 rounded-[100px] self-stretch md:w-[235px]">
+                    <span class="text-white text-xl not-italic font-extrabold leading-[normal]">Veiw gallery</span>
+                </button>
+                <button onclick="window.location.href='admission.html'" class="flex h-16 justify-center items-center gap-2.5 border border-solid border-[#A0139E] bg-white shadow-[0_4px_20px_0_rgba(207,39,152,0.43),2px_-4px_4px_0_rgba(207,39,152,0.12)_inset,-2px_4px_4px_0_rgba(255,255,255,0.47)_inset] px-6 py-5 rounded-[100px] self-stretch md:w-auto">
+                    <span class="text-[20px] not-italic font-extrabold leading-normal bg-gradient-to-r from-[#A0139E] to-[#C41943] bg-clip-text text-transparent"><h3>Start your admission</h3></span> 
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- News Section -->
+    <section class="flex flex-col items-center gap-8 px-4 py-[50px] self-stretch md:max-w-[1440px] md:px-[50px] md:py-[100px]">
+        <!-- Decorative element -->
+        
+        <div class="w-full mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="self-stretch text-center leading-normal text-[32px] font-extrabold text-black md:text-[64px]">News and Updates</h2>
+                <p class="self-stretch text-center leading-normal text-base font-normal text-[#717171] md:text-2xl">A glance at Upcoming events, Resumption details, and other school related news.</p>
+            </div>
+            
+            <div class="flex flex-col justify-center items-start self-stretch">
+                <div class="md:flex md:flex-col md:items-end md:gap-5 md:self-stretch">
+                    <article class="flex flex-col items-start gap-[2.5vw] self-stretch bg-[#FFF] px-0 py-2.5 md:flex-row">
+                        <div class="md:flex md:gap-8">
+                            <div>
+                                <img src="/assets/news1.jpg" alt="News Image" class="h-[25vh] self-stretch aspect-[343/209.54] rounded-[5vw] md:w-[37vw] md:h-[22.6vw] md:rounded-[1.4vw]">
+                            </div>
+                            <div class="flex flex-col items-center gap-[2vh] self-stretch pb-[1.5vh] md:justify-between md:gap-0 md:flex-1">
+                                <div class="flex flex-col items-start gap-[2vh] self-stretch">                                
+                                    <h3 class="self-stretch text-[color:var(--Black-900,#000)] not-italic font-medium leading-normal text-[5.2vw] md:text-[2.8vw] lg:text-[2.46vw] sm:text-2xl sm:text-left">Resumption is on the 19th of February, 2026</h3>
+                                    <p class=" self-stretch text-[color:var(--Black-500,#717171)] not-italic font-medium leading-normal text-base sm:text-lg md:text-xl lg:text-2xl">This is to inform every student that resumption is Monday, 19th February, 2026. All parents and Guardians should bring this in mind.</p>
+                                </div>
+                                <div class="self-stretch text-xl sm:text-2xl lg:text-[2vw] font-medium leading-normal not-italic underline decoration-[#A0139E] bg-gradient-to-r from-[#A0139E] to-[#C41943] bg-clip-text text-transparent  [-webkit-background-clip:text] [-webkit-text-fill-color:transparent]">
+                                    <a href="#">Read more</a>
+                                </div>                                
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="flex flex-col items-start gap-[2.5vw] self-stretch bg-[#FFF] px-0 py-2.5 md:flex-row">
+                        <div class="md:flex md:gap-8">
+                            <div>
+                                <img src="/assets/news2.jpg" alt="News Image" class="h-[25vh] self-stretch aspect-[343/209.54] rounded-[5vw] md:w-[37vw] md:h-[22.6vw] md:rounded-[1.4vw]">
+                            </div>
+                            <div class="flex flex-col items-center gap-[2vh] self-stretch pb-[1.5vh] md:justify-between md:gap-0 md:flex-1">
+                                <div class="flex flex-col items-start gap-[2vh] self-stretch">                                
+                                    <h3 class="self-stretch text-[color:var(--Black-900,#000)] not-italic font-medium leading-normal text-[5.2vw] md:text-[2.8vw] lg:text-[2.46vw] sm:text-2xl sm:text-left">Resumption is on the 19th of February, 2026</h3>
+                                    <p class=" self-stretch text-[color:var(--Black-500,#717171)] not-italic font-medium leading-normal text-base sm:text-lg md:text-xl lg:text-2xl">This is to inform every student that resumption is Monday, 19th February, 2026. All parents and Guardians should bring this in mind.</p>
+                                </div>
+                                <div class="self-stretch text-xl sm:text-2xl lg:text-[2vw] font-medium leading-normal not-italic underline decoration-[#A0139E] bg-gradient-to-r from-[#A0139E] to-[#C41943] bg-clip-text text-transparent  [-webkit-background-clip:text] [-webkit-text-fill-color:transparent]">
+                                    <a href="#">Read more</a>
+                                </div>                                
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="flex flex-col items-start gap-[2.5vw] self-stretch bg-[#FFF] px-0 py-2.5 md:flex-row">
+                        <div class="md:flex md:gap-8">
+                            <div>
+                                <img src="/assets/news3.jpg" alt="News Image" class="h-[25vh] self-stretch aspect-[343/209.54] rounded-[5vw] md:w-[37vw] md:h-[22.6vw] md:rounded-[1.4vw]">
+                            </div>
+                            <div class="flex flex-col items-center gap-[2vh] self-stretch pb-[1.5vh] md:justify-between md:gap-0 md:flex-1">
+                                <div class="flex flex-col items-start gap-[2vh] self-stretch">                                
+                                    <h3 class="self-stretch text-[color:var(--Black-900,#000)] not-italic font-medium leading-normal text-[5.2vw] md:text-[2.8vw] lg:text-[2.46vw] sm:text-2xl sm:text-left">Resumption is on the 19th of February, 2026</h3>
+                                    <p class=" self-stretch text-[color:var(--Black-500,#717171)] not-italic font-medium leading-normal text-base sm:text-lg md:text-xl lg:text-2xl">This is to inform every student that resumption is Monday, 19th February, 2026. All parents and Guardians should bring this in mind.</p>
+                                </div>
+                                <div class="self-stretch text-xl sm:text-2xl lg:text-[2vw] font-medium leading-normal not-italic underline decoration-[#A0139E] bg-gradient-to-r from-[#A0139E] to-[#C41943] bg-clip-text text-transparent  [-webkit-background-clip:text] [-webkit-text-fill-color:transparent]">
+                                    <a href="#">Read more</a>
+                                </div>                                
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>                 
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <!-- Updated CTA section with light pink background and better layout -->
+    <section class="flex flex-col items-center border-y-4 border-solid border-t-[color:var(--Gradient-fill,#A0139E)] border-b-[color:var(--Gradient-fill,#A0139E)] bg-[#FFE5F6] w-full gap-[8.53vw] px-[4.27vw] pt-[8vw] pb-[26.67vw] h-[109.33vw] md:gap-[2.22vw] md:px-[3.47vw] md:py-[6.94vw] md:h-auto">
+        <div class="flex flex-col justify-center items-center gap-0.5 self-stretch">
+            <h1 class="self-stretch text-[color:var(--Black-900,#000)] text-center not-italic font-extrabold leading-normal text-[32px] md:text-[64px]">Enroll your child Today!</h1>
+            <p class="text-[color:var(--Black-900,#000)] text-center not-italic font-normal leading-normalself-stretch md:w-[774px]text-base md:text-2xl">Give your child the best start in life—enroll your child today in a school where excellence, care, and future success begin!</p>
+        </div>
+        <button onclick="window.location.href='admission.html'" class="flex justify-center items-center gap-2.5 text-white not-italic font-extrabold leading-[normal] w-[235px] h-16  border border-solid border-white px-6 py-5 rounded-[100px]  [background:var(--Gradient-fill,linear-gradient(90deg,#A0139E_0%,#C41943_100%))]  shadow-[0_4px_20px_0_rgba(207,39,152,0.43),2px_-4px_4px_0_rgba(0,0,0,0.25)_inset,-2px_4px_4px_0_rgba(255,255,255,0.47)_inset] shrink-0 md:shrink">
+            Start your admission
+        </button>
+    </section>
+
+    <footer class="w-full bg-[#FEF5EA] px-[3.9vw] pt-[6vh] pb-[6vh] md:pt-[12vh] flex flex-col items-start gap-[3.5vw]">
+        <div>
+            <!-- Logo + Tagline -->
+            <div class="flex items-start self-stretch gap-[28.26vw] sm:w-[91.79vw] sm:h-[11.03vw] sm:shrink-0">
+                <div class="flex items-start gap-[0.75rem] pb-[4vh]">
+                    <img src="/assets/Labaika Logo 1.png" alt="Logo" class="w-[8vw] max-w-[62px] h-auto" />
+                    <div class="flex flex-col items-start">
+                        <h2 class="not-italic font-extrabold leading-normal bg-gradient-to-r from-[#A0139E] to-[#C41943] bg-clip-text text-transparent text-[5vw] sm:text-[32px]">
+                            Labaika Group of Schools
+                        </h2>
+                        <p class="text-[3.5vw] lg:text-[1.25vw] font-medium text-[#393939]">
+                        Faith, Learning and Humanity
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="grid grid-cols-2 lg:grid-cols-4 gap-[5vh] lg:gap-[3vw] w-full lg:w-[100%]">
+                <!-- Quick Links -->
+                <div class="flex flex-col gap-[1.5vh]">
+                    <h3 class="font-bold text-[3.8vw] lg:text-[1.25vw] text-[#A0139E] flex items-center gap-1">
+                        Quick links <span>🔗</span>
+                    </h3>
+                    <ul class="flex flex-col gap-[1vh] text-[3.3vw] lg:text-[1vw]">
+                        <li>Home</li>
+                        <li>About us</li>
+                        <li>Achievements</li>
+                        <li>Admission</li>
+                        <li>Academics</li>
+                        <li>Gallery</li>
+                        <li>Events and Activities</li>
+                    </ul>
+                </div>          
+                <!-- Contact Us -->
+                <div class="flex flex-col gap-[1.5vh]">
+                    <h3 class="font-bold text-[3.8vw] lg:text-[1.25vw] text-[#A0139E] flex items-center gap-1">
+                        Contact us <span>☎️</span>
+                    </h3>
+                    <ul class="flex flex-col gap-[1vh] text-[3.3vw] lg:text-[1vw]">
+                        <li>08166626317</li>
+                        <li>08055609712</li>
+                        <li>08035266801</li>
+                        <li>labaikaschools@gmail.com</li>
+                    </ul>
+                </div>          
+                <!-- Socials -->
+                <div class="flex flex-col gap-[1.5vh]">
+                    <h3 class="font-bold text-[3.8vw] lg:text-[1.25vw] text-[#A0139E] flex items-center gap-1">
+                        Socials <span>🔗</span>
+                    </h3>
+                    <ul class="flex flex-col gap-[1vh] text-[3.3vw] lg:text-[1vw]">
+                        <li>Facebook</li>
+                        <li>Instagram</li>
+                        <li>X (Twitter)</li>
+                    </ul>
+                </div>          
+                <!-- Address + Opening Hours -->
+                <div class="flex flex-col gap-[4vh]">
+                    <div class="flex flex-col gap-[1.5vh]">
+                        <h3 class="font-bold text-[3.8vw] lg:text-[1.25vw] text-[#A0139E] flex items-center gap-1">
+                            Address <span>📍</span>
+                        </h3>
+                        <p class="text-[3.3vw] lg:text-[1vw] leading-snug">
+                            Ayedaade Area, Off Alafara,<br />
+                            Elenusonso Road, Ibadan.
+                        </p>
+                    </div>
+                    <div class="hidden md:flex flex-col gap-[1.5vh]">
+                        <h3 class="font-bold text-[3.8vw] lg:text-[1.25vw] text-[#A0139E] flex items-center gap-1">
+                            Opening Hours <span>⏰</span>
+                        </h3>
+                        <p class="text-[3.3vw] lg:text-[1vw] leading-snug">
+                            (Monday to Friday) - 7:00am to 4:00pm
+                        </p>
+                    </div>
+                </div>          
+                <div class="flex md:hidden flex-col gap-[1.5vh]">
+                    <h3 class="font-bold text-[3.8vw] lg:text-[1.25vw] text-[#A0139E] flex items-center gap-1">
+                        Opening Hours <span>⏰</span>
+                    </h3>
+                    <p class="text-[3.3vw] lg:text-[1vw] leading-snug">
+                        (Monday to Friday) - 7:00am to 4:00pm
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom Copyright -->
+        <div class="mt-[5vh] w-full text-center text-[3vw] lg:text-[1vw] text-[#5C5C5C]">
+            Copyright © 2025 Labaika Group of Schools. All Rights Reserved
+        </div>
+    </footer>
+
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
